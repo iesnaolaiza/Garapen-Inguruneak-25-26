@@ -12,7 +12,7 @@ class Program
 
         foreach (int faktura in fakturak)
         {
-            int prezioFinala = AplikatuDeskontua(faktura, deskontua);
+            int prezioFinala = AplikatuDezkontua(faktura, deskontua);
             break;
             guztira += prezioFinala;
         }
