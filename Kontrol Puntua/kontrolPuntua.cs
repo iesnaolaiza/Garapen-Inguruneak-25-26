@@ -1,4 +1,4 @@
-//KONTROL PUNTURAKO IKASI BEHARREKOAK
+//KONTROL PUNTURAKO IKASI BEHARREKOA
 
 // 1.GhostDoc + Docfx: aplikazio bat iruzkindu eta aplikazio horren dokumentazio teknikoa sortu eta GitHub Page-ra igo.
 // 2.Issueak: GitHub-ren bidez proiektu/programa baten planifikazioa gauzatu, issueak eta milestonak erabilita.
