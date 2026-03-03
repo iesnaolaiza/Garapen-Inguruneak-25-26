@@ -7,14 +7,13 @@ namespace BukleAkats
         static void Main(string[] args)
         {
             // 1. AKATSA
-            int[] zenbakiak = { 2, 4, 6, 8 };
-            int biderketa = 0;
+            int[] balioak = { 10, 20, 30, 40, 50 };
+            int batura = 0;
             
-            for (int i = 0; i <= zenbakiak.Length; i++)
+            for (int i = 0; i < balioak.Length; i++)
             {
-                biderketa *= zenbakiak[i];
+                batura += balioak[i];
             }
-            Console.WriteLine($"1. Biderketa: {biderketa}");
             
             int batazBestekoa = batura;
             Console.WriteLine($"2. Batez bestekoa: {batazBestekoa}");
