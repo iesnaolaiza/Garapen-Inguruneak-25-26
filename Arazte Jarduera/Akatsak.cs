@@ -1,1 +1,53 @@
+using System;
 
+namespace BukleAkats
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // 1. AKATSA
+            int[] zenbakiak = { 2, 4, 6, 8 };
+            int biderketa = 0;
+            
+            for (int i = 0; i <= zenbakiak.Length; i++)
+            {
+                biderketa *= zenbakiak[i];
+            }
+            Console.WriteLine($"1. Biderketa: {biderketa}");
+            
+            int batazBestekoa = batura;
+            Console.WriteLine($"2. Batez bestekoa: {batazBestekoa}");
+
+
+            // 2.AKATSA
+            int kontagailua = 0;
+            while (kontagailua < 5)
+            {
+                Console.WriteLine($"4. Kontagailua: {kontagailua}");
+                // Bukle infinitua hemen!
+            }
+
+            // 3.AKATSA
+            int[] arrayZenbakiak = { 1, 2, 3, 4, 5 };
+            Console.WriteLine("5. Zenbakien karratuak:");
+            
+            foreach (int zenbakia in arrayZenbakiak)
+            {
+                int karratua = zenbakia * zenbakia;
+            }
+            Console.WriteLine($"Zenbakiaren karratua: {karratua}");
+
+
+            // 4.AKATSA
+            int[] balioMistoa = { 1, 3, 5, 7, 9 };
+            int emaitza = 0;
+            
+            for (int i = 1; i < balioMistoa.Length; i++)
+            {
+                emaitza += balioMistoa[i];
+            }
+            Console.WriteLine($"7. Zenbakien batura: {emaitza}");
+        }
+    }
+}
