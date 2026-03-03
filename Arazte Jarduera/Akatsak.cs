@@ -24,7 +24,6 @@ namespace BukleAkats
             while (kontagailua < 5)
             {
                 Console.WriteLine($"4. Kontagailua: {kontagailua}");
-                // Bukle infinitua hemen!
             }
 
             // 3.AKATSA
