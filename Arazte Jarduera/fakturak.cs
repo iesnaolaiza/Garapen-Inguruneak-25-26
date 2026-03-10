@@ -1,31 +1,35 @@
-
 using System;
 using System.Collections.Generic;
- 
-class Program
+
+namespace GarapenJardueraBreakPoint
 {
-    static void Main()
+    class Program
     {
-        List<int> fakturak = new List<int> { 120, 50, 300, 80, 200 };
-        int deskontua = 10;
-        int guztira = 0;
-
-        foreach (int faktura in fakturak)
+        static void Main()
         {
-            int prezioFinala = AplikatuDezkontua(faktura, deskontua);
-            break;
-            guztira += prezioFinala;
+            List<int> fakturak = new List<int> { 120, 50, 300, 80, 200, 400, 500, 800 };
+            int deskontua = 10;
+            int guztira = 0;
+
+            foreach (int faktura in fakturak)
+            {
+                int prezioFinala = AplikatuDeskontua(faktura, deskontua);
+                guztira += prezioFinala;
+
+                Console.WriteLine("Faktura: " + faktura + " -> Azken prezioa: " + prezioFinala);
+            }
+
+            Console.WriteLine("Guztira: " + guztira);
         }
 
-        Console.WriteLine("Guztira: " + guztira);
-    }
-
-    static int AplikatuDeskontua(int zenbatekoa, int deskontua)
-    {
-        if (zenbatekoa > 100)
+        static int AplikatuDeskontua(int zenbatekoa, int deskontua)
         {
-            return zenbatekoa - deskontua;
+            if (zenbatekoa >= 450)
+            {
+                return zenbatekoa - (zenbatekoa * deskontua / 100);
+            }
+
+            return zenbatekoa;
         }
-        return zenbatekoa;
     }
 }
