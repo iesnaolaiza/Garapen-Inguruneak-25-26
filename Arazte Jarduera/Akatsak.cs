@@ -13,6 +13,7 @@ namespace BukleAkats
             for (int i = 0; i < balioak.Length; i++)
             {
                 batura += balioak[i];
+                 batura = batura / balioak.Length;
             }
             
             int batazBestekoa = batura;
