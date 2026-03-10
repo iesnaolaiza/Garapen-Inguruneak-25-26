@@ -1,51 +1,29 @@
 using System;
+using System.Collections.Generic;
 
-namespace BukleAkats
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main(string[] args)
+        List<int> fakturak = new List<int> { 120, 50, 300, 80, 200, 400, 500, 800 };
+        int deskontua = 10;
+        int guztira = 0;
+
+        foreach (int faktura in fakturak)
         {
-            // 1. AKATSA
-            int[] balioak = { 10, 20, 30, 40, 50 };
-            int batura = 0;
-            
-            for (int i = 0; i < balioak.Length; i++)
-            {
-                batura += balioak[i];
-            }
-            
-            int batazBestekoa = batura;
-            Console.WriteLine($"2. Batez bestekoa: {batazBestekoa}");
-
-
-            // 2.AKATSA
-            int kontagailua = 0;
-            while (kontagailua < 5)
-            {
-                Console.WriteLine($"4. Kontagailua: {kontagailua}");
-            }
-
-            // 3.AKATSA
-            int[] arrayZenbakiak = { 1, 2, 3, 4, 5 };
-            Console.WriteLine("5. Zenbakien karratuak:");
-            
-            foreach (int zenbakia in arrayZenbakiak)
-            {
-                int karratua = zenbakia * zenbakia;
-            }
-            Console.WriteLine($"Zenbakiaren karratua: {karratua}");
-
-
-            // 4.AKATSA
-            int[] balioMistoa = { 1, 3, 5, 7, 9 };
-            int emaitza = 0;
-            
-            for (int i = 1; i < balioMistoa.Length; i++)
-            {
-                emaitza += balioMistoa[i];
-            }
-            Console.WriteLine($"7. Zenbakien batura: {emaitza}");
+            int prezioFinala = AplikatuDeskontua(faktura, deskontua);
+            guztira += prezioFinala;
         }
+
+        Console.WriteLine("Guztira: " + guztira);
+    }
+
+    static int AplikatuDeskontua(int zenbatekoa, int deskontua)
+    {
+        if (zenbatekoa >= 450)
+        {
+            return zenbatekoa - deskontua;
+        }
+        return zenbatekoa;
     }
 }
