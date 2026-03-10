@@ -12,9 +12,8 @@ class Program
 
         foreach (int faktura in fakturak)
         {
-            int prezioFinala = AplikatuDezkontua(faktura, deskontua);
-            break;
-            guztira += prezioFinala;
+            int prezioFinala = AplikatuDeskontua(faktura, deskontua);
+            guztira += prezioFinala;  
         }
 
         Console.WriteLine("Guztira: " + guztira);
