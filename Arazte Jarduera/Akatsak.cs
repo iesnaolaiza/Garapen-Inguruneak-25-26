@@ -15,7 +15,7 @@ namespace BukleAkats
                 batura += balioak[i];
             }
             
-            int batazBestekoa = batura;
+            int batazBestekoa = batura / balioak.Length;
             Console.WriteLine($"2. Batez bestekoa: {batazBestekoa}");
 
 
@@ -24,6 +24,7 @@ namespace BukleAkats
             while (kontagailua < 5)
             {
                 Console.WriteLine($"4. Kontagailua: {kontagailua}");
+                kontagailua++;
             }
 
             // 3.AKATSA
@@ -33,15 +34,15 @@ namespace BukleAkats
             foreach (int zenbakia in arrayZenbakiak)
             {
                 int karratua = zenbakia * zenbakia;
+                Console.WriteLine($"Zenbakiaren karratua: {karratua}");
             }
-            Console.WriteLine($"Zenbakiaren karratua: {karratua}");
 
 
             // 4.AKATSA
             int[] balioMistoa = { 1, 3, 5, 7, 9 };
             int emaitza = 0;
             
-            for (int i = 1; i < balioMistoa.Length; i++)
+            for (int i = 0; i < balioMistoa.Length; i++)
             {
                 emaitza += balioMistoa[i];
             }
