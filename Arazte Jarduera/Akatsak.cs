@@ -41,7 +41,7 @@ namespace BukleAkats
             int[] balioMistoa = { 1, 3, 5, 7, 9 };
             int emaitza = 0;
             
-            for (int i = 1; i < balioMistoa.Length; i++)
+            for (int i = 0; i < balioMistoa.Length; i++)
             {
                 emaitza += balioMistoa[i];
             }
